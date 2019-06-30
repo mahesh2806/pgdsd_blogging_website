@@ -27,51 +27,55 @@
 
         <!-- Insert code for Sign In modal here -->
         <!-- The Modal -->
-        <div id="signInModal" class="modal">
+        <div id="signin_modal" class="modal">
+            <!-- Insert code for Sign In modal here -->
             <!-- Modal content -->
-            <div class="header-modal-content">
-                <span class="close">&times;</span>
-                <h2>Welcome Back!</h2>
-                <hr/>
-                <div class="modal-body">
-                    <form action="javascript: void(0)">
-                        <label>Username</label>
-                        <input class="header-input" type="text" placeholder="Enter Username" required>
-                        <label>Password</label>
-                        <input class="header-input" type="password" placeholder="Enter Password" required>
-                        <input type="submit" class="submit-btn" value="Sign In"></input>
-                        <h4>Not a member?<a class="sign-up-link" onclick="signup()"> Sign Up</a></h4>
-                    </form>
+            <form class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Welcome Back!</h2>
+                    <hr>
                 </div>
-            </div>
+                <div class="modal-body">
+                    <label class="input-headings">Username</label>
+                    <input class="input-fields" type="text" name="username" placeholder="Enter Username" required>
+                    <label class="input-headings">Password</label>
+                    <input class="input-fields" type="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-signin-btn" class="modal-auth-btns">Sign In</button>
+                    <div id="footer-items">
+                        <label>Not a member?</label>
+                        <a href="#" id="signup-modal">Sign Up</a>
+                    </div>
+                </div>
+            </form>
         </div>
-    </div>
 
-    <div>
-
-        <!-- Insert code for Sign Up modal here -->
-        <div id="signUpModal" class="modal">
+        <div id="signup_modal" class="modal">
+            <!-- Insert code for Sign Up modal here -->
             <!-- Modal content -->
-            <div class="header-modal-content">
-                <span class="close" id="closeSignUpModal">&times;</span>
-                <h2>Get Started</h2>
-                <hr/>
-                <div class="modal-body">
-                    <form action="javascript: void(0)">
-                        <label>Full Name</label>
-                        <input class="header-input" type="text" placeholder="Enter Full Name" required>
-                        <label>Username</label>
-                        <input class="header-input" type="text" placeholder="Enter Username" required>
-                        <label>Password</label>
-                        <input class="header-input" type="password" placeholder="Enter Password" required>
-                        <label>Confirm Password</label>
-                        <input class="header-input" type="password" placeholder="Confirm Password" required>
-                        <input type="submit" class="submit-btn" value="Sign Up"></input>
-                    </form>
+            <form class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Get Started</h2>
+                    <hr>
                 </div>
-            </div>
+                <div class="modal-body">
+                    <label class="input-headings">Full Name</label>
+                    <input class="input-fields" type="text" name="fullname" placeholder="Enter Full Name" required>
+                    <label class="input-headings">Username</label>
+                    <input class="input-fields" type="text" name="username" placeholder="Enter Username" required>
+                    <label class="input-headings">Password</label>
+                    <input class="input-fields" type="password" name="password" placeholder="Enter Password" required>
+                    <label class="input-headings">Confirm Password</label>
+                    <input class="input-fields" type="password" name="confirmpassword" placeholder="Confirm Password" required>
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-signup-btn" class="modal-auth-btns">Sign Up</button>
+                </div>
+            </form>
         </div>
-    </div>
 
     <div class="allPostsContainer">
     <div class="post">

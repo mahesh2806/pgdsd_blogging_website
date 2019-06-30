@@ -130,14 +130,29 @@ button {
 }
 
 /* Modal Content */
+/*.blog-list-modal-content {*/
+    /*align: center;*/
+    /*vertical-align: center;*/
+    /*text-align: center;*/
+    /*background-color: white;*/
+    /*float: top;*/
+    /*height: 15%;*/
+    /*margin: 0 auto;*/
+    /*padding: 2%;*/
+    /*width: 25%;*/
+/*}*/
+
 .blog-list-modal-content {
-    align: center;
-    background-color: white;
-    float: top;
-    height: 15%;
-    margin: auto;
-    padding: 2%;
     width: 25%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    padding: 1%;
+    margin: auto;
 }
 
 .blog-modal-text {
@@ -165,7 +180,7 @@ button {
     margin: 2.5% 2.5%;
     padding: 1% 1%;
     text-align: center;
-    width:20%;
+    width:30%;
 }
 
 .delete-post-modal-no {
@@ -176,7 +191,7 @@ button {
     margin: 2.5% 2.5%;
     border:0;
     float: right;
-    width:20%;
+    width:30%;
     font-weight: normal;
 }
 
