@@ -11,4 +11,52 @@ body{
 } 
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+
+
+.postButtons{
+	position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin:0 auto;
+    width:100%; text-align: center;
+}
+.postButtons button{ display:inline-block; margin:0 auto; padding:0 20px; text-align:center; height:36px; line-height: 36px; background: #cb8e05; color:#000; font-size:16px; cursor: pointer; }
+        
+/* Modal Content */
+.createpost-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+#createpost_modal .modal-body{
+	padding: 5px 50px;
+}
+
+#modal-createpost-btn{
+	background-color: #5cb85c;
+	color: white;
+	padding: 10px 15px;
+	border: 0px;
+}
+
+.textarea{
+	background-color: lightgrey;
+	height: 250px;
+	border: 1px solid darkgrey;
+}
+
+.createpost-modal-content .input-fields {
+	width: 45%
+
+}
